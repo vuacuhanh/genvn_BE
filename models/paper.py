@@ -9,7 +9,7 @@ class Counts(BaseModel):
 
 class Meta(BaseModel):
     grade: int = Field(ge=1, le=5)
-    focus: List[Literal["danh_tu", "dong_tu"]]
+    focus: List[Literal["danh_tu", "dong_tu","tinh_tu","trang_tu"]]
     difficulty: Literal["easy", "medium", "hard"]
     counts: Counts                      # ← dùng model thay vì dict
     theme: Optional[str] = None
