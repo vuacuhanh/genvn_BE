@@ -20,14 +20,6 @@ def _find_writing_items(paper: Dict[str, Any]) -> List[Dict[str, Any]]:
 # DOCX EXPORT
 # =========================
 def paper_to_docx(paper: Dict[str, Any]) -> bytes:
-    """
-    Tạo DOCX có:
-      - Header: Họ tên / Lớp / Ngày
-      - Tiêu đề + Theme + Thời gian làm bài
-      - Khung Điểm / Nhận xét (table)
-      - MCQ hiển thị 4 phương án
-      - Writing: chèn các dòng trống để HS viết
-    """
     try:
         from docx import Document
         from docx.shared import Pt, Cm
