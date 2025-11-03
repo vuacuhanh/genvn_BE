@@ -15,9 +15,11 @@ app = FastAPI(
 ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
-    "https://genvn-nytj104wd-qqs-projects-d8bf152f.vercel.app/generator",
-    "https://genvn-nytj104wd-qqs-projects-d8bf152f.vercel.app/",
+    "https://genvn-eoimxuvwe-qqs-projects-d8bf152f.vercel.app",
+    "https://genvn-nytj104wd-qqs-projects-d8bf152f.vercel.app",
+    "https://genvn-fe.vercel.app",
 ]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=ALLOWED_ORIGINS,
